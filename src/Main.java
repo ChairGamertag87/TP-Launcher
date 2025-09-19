@@ -280,7 +280,7 @@ public class Main extends JFrame {
             Object res = m.invoke(target, args);
             append("✔ " + fqcn + "." + signature(m) + " exécutée.\n");
             if (m.getReturnType() != void.class) {
-                append("→ Résultat : " + String.valueOf(res) + "\n");
+                append("→ Résultat : \n" + String.valueOf(res) + "\n");
             }
 
         } catch (InvocationTargetException ite) {
