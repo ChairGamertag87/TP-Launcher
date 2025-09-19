@@ -27,7 +27,7 @@ public class Main extends JFrame {
         setSize(780, 560);
         setLayout(new BorderLayout(10, 10));
 
-        // -------- TOP --------
+        /* ===================== TOP ===================== */
         JPanel top = new JPanel(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
         c.insets = new Insets(6,6,6,6);
@@ -50,12 +50,12 @@ public class Main extends JFrame {
 
         add(top, BorderLayout.NORTH);
 
-        // -------- PARAMS (centre haut) --------
+        /* ===================== PARAMS (centre haut) ===================== */
         paramsPanel = new JPanel(new GridBagLayout());
         paramsPanel.setBorder(BorderFactory.createTitledBorder("Paramètres"));
         add(paramsPanel, BorderLayout.CENTER);
 
-        // -------- OUTPUT --------
+        /* ===================== OUTPUT ===================== */
         outputArea = new JTextArea();
         outputArea.setEditable(false);
         outputArea.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 12));
@@ -64,7 +64,7 @@ public class Main extends JFrame {
         add(scroll, BorderLayout.SOUTH);
         ((BorderLayout)getLayout()).setVgap(6);
 
-        // Log vers la zone de texte
+        /* ===================== Log vers la zone de texte===================== */
         redirectSystemStreams();
 
         // Actions
