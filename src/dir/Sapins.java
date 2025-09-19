@@ -48,5 +48,23 @@ public class Sapins
         }
         return resultat;
     }
+
+    public static String genererStringMatriceEcranBarre(int taille){
+        String resultat = "";
+        for (int i = 0; i < taille; i++) {
+            for (int j = 0; j < taille; j++) {
+                if (i == 0 || j == 0 || i == taille - 1 || j == taille - 1) {
+                    resultat += "*";
+                } else if (i == j || i + j == taille - 1) {
+                    resultat += "*";
+                } else {
+                    resultat += "0";
+                }
+            }
+            resultat += "\n";
+        }
+        return resultat;
+    }
+
 }
 
