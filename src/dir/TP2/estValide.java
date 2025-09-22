@@ -1,4 +1,4 @@
-package dir;
+package dir.TP2;
 
 import java.util.Scanner ;
 

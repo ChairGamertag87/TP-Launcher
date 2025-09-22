@@ -1,4 +1,4 @@
-package dir;
+package dir.TP1;
 /**
  * TP1
  *

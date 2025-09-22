@@ -1,4 +1,4 @@
-package dir;
+package dir.TP4;
 
 public class Sapins
 {
