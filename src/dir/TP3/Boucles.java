@@ -1,6 +1,4 @@
-
-
-
+package dir.TP3;
 
 import java.util.Scanner;
 public class Boucles {
@@ -57,4 +55,4 @@ public class Boucles {
     
   
     
-}
+};

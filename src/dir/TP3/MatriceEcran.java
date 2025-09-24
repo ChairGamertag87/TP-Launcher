@@ -1,3 +1,5 @@
+package dir.TP3;
+
 public class MatriceEcran {
 
     /**
