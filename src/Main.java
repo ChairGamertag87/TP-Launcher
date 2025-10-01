@@ -354,7 +354,6 @@ public class Main extends JFrame {
             outputArea.setCaretPosition(outputArea.getDocument().getLength());
         });
     }
-
     private void redirectSystemStreams() {
         OutputStream tee = new OutputStream() {
             private final StringBuilder buffer = new StringBuilder();
