@@ -10,7 +10,6 @@ public class Encheres {
     public static void main(String[] args) {
         Scanner clavier = new Scanner(System.in);
 
-        /* --- Version 1 : 6 enchères croissantes --- */
         double[] enchere1 = new double[6];
         for (int i = 0; i < 6; i++) {
             System.out.println("Donnez une enchère : ");
@@ -26,7 +25,6 @@ public class Encheres {
             System.out.println(enchere1[i]);
         }
 
-        /* --- Version 2 : enchère > somme des précédentes --- */
         double[] enchere2 = new double[6];
         double somme = 0;
         for (int i = 0; i < 6; i++) {
@@ -44,7 +42,6 @@ public class Encheres {
             System.out.println(enchere2[i]);
         }
 
-        /* --- Version 3 : possibilité d’arrêter avant 6 enchères --- */
         double[] enchere3 = new double[6];
         int nb = 0;
         somme = 0;
