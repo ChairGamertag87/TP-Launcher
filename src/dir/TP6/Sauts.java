@@ -82,21 +82,17 @@ public class Sauts {
 
     public static void main(String[] args) {
 
-        /* --- Saisie des sauts --- */
         int nbSauts = saisieIntMinMax(0, 15);
         double[] tab = new double[nbSauts];
         saisieTabD(nbSauts, tab);
 
-        /* --- Moyenne des sauts --- */
         double moyenne = moyenneSauts(nbSauts, tab);
         System.out.println("Moyenne des sauts : " + moyenne);
 
-        /* --- Meilleur saut --- */
         if (nbSauts > 0) {
             double meilleur = meilleurSaut(nbSauts, tab);
             System.out.println("Meilleur saut : " + meilleur);
 
-            /* --- Pire saut --- */
             double pire = pireSaut(nbSauts, tab);
             System.out.println("Pire saut : " + pire);
         }
